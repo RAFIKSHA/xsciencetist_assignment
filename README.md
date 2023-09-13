@@ -99,6 +99,6 @@ Before you can connect to the database, you need to configure the following para
 - **User Credentials**: Username and password for the MySQL user with access to the database.
 
 
-### population schema diagram
+# population schema diagram
 
 ![population_diagram](./population_schema.py.png)
