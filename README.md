@@ -98,37 +98,5 @@ Before you can connect to the database, you need to configure the following para
 - **Database Name**: The name of the MySQL database used for the project.
 - **User Credentials**: Username and password for the MySQL user with access to the database.
 
-Here's an example of how to configure these parameters in your code:
-
-```python
-import mysql.connector
-
-# Configuration
-host = 'localhost'
-port = 3306
-database_name = 'your_database_name'
-user = 'your_username'
-password = 'your_password'
-
-## connecting database
-try:
-    connection = mysql.connector.connect(
-        host=host,
-        port=port,
-        database=database_name,
-        user=user,
-        password=password
-    )
-    if connection.is_connected():
-        print("Connected to MySQL database")
-        cursor = connection.cursor()
-        
-        # Continue with database operations
-        
-except mysql.connector.Error as err:
-    print(f"Error: {err}")
-finally:
-    if 'connection' in locals():
-        connection.close()
-
- 
+##population schema diagram
+![population_diagram](./population_schema.png)
